@@ -7,7 +7,7 @@
 A base for building shareable Svelte component library. Clone it with [degit](https://github.com/Rich-Harris/degit):
 
 ```bash
-npx degit nirmaoz/svelt-component-library-template my-new-component
+npx degit nirmaoz/svelte-component-library-template my-new-component
 cd my-new-component
 npm install # or yarn
 ```
