@@ -16,12 +16,17 @@ Your component's source code lives in `src/Component.svelte`.
 
 You can create a package that exports multiple components by adding them to the `src` directory and editing `src/index.js` to reexport them as named exports.
 
+## This template includes:
+
+* Basic Component.svelte
+* Testing using svelte-testing-library + Jest
+* Storybook
+* Rollup
 
 ## Setting up
 
 * Run `npm init` (or `yarn init`)
 * Replace this README with your own
-
 
 ## Consuming components
 
@@ -38,4 +43,15 @@ Comes with tests out of the box using [svelte-testing-library](https://github.co
 To Run tests:
 ```bash
 npm test # or yarn
+```
+
+### Storybook
+To serve development build:
+```bash
+npm run storybook
+```
+
+To build static storybook site (default output folder is /docs for easly sharing on github pages):
+```bash
+npm run build-storybook
 ```

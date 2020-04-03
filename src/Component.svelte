@@ -1,10 +1,9 @@
 <script>
   export let name;
-
-  let buttonText = "Button";
+  export let buttonText = "Button";
 
   function handleClick() {
-    buttonText = "Button Clicked";
+    buttonText += " Clicked";
   }
 </script>
 

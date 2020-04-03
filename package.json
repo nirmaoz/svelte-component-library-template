@@ -1,25 +1,35 @@
 {
-  "name": "SvelteComponent",
+  "name": "svelte-component-library",
+  "version": "0.1.0",
   "svelte": "src/index.js",
   "module": "dist/index.mjs",
   "main": "dist/index.js",
   "scripts": {
     "build": "rollup -c",
     "prepublishOnly": "npm run build",
-    "test": "jest"
+    "test": "jest",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "del-cli docs && build-storybook -c .storybook -o docs"
   },
   "devDependencies": {
     "@babel/core": "^7.9.0",
     "@babel/preset-env": "^7.9.0",
     "@rollup/plugin-node-resolve": "^6.0.0",
+    "@storybook/addon-actions": "^5.3.18",
+    "@storybook/addon-links": "^5.3.18",
+    "@storybook/addons": "^5.3.18",
+    "@storybook/svelte": "^5.3.18",
     "@testing-library/jest-dom": "^5.3.0",
     "@testing-library/svelte": "^3.0.0",
     "babel-jest": "^25.2.6",
+    "babel-loader": "^8.1.0",
+    "del-cli": "^3.0.0",
     "jest": "^25.2.7",
     "rollup": "^1.20.0",
     "rollup-plugin-svelte": "^5.0.0",
-    "svelte": "^3.0.0",
-    "svelte-jester": "^1.0.5"
+    "svelte": "^3.20.1",
+    "svelte-jester": "^1.0.5",
+    "svelte-loader": "^2.13.6"
   },
   "keywords": [
     "svelte"
@@ -27,5 +37,6 @@
   "files": [
     "src",
     "dist"
-  ]
+  ],
+  "dependencies": {}
 }
