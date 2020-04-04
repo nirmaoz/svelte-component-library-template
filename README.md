@@ -35,7 +35,7 @@ Your package.json has a `"svelte"` field pointing to `src/index.js`, which allow
 For everyone else, `npm run build` will bundle your component's source code into a plain JavaScript module (`dist/index.mjs`) and a UMD script (`dist/index.js`). This will happen automatically when you publish your component to npm, courtesy of the `prepublishOnly` hook in package.json.
 
 ### Based on sveltejs/component-template
-I couldn't find an opinionated components library template to my liking, so I used [sveltejs/component-template](https://github.com/sveltejs/component-template) as base. And then I added testing + storybook.
+I couldn't find an opinionated components library template to my liking, so I used [sveltejs/component-template](https://github.com/sveltejs/component-template) as base. And then I added minified build configuration using terser plugin + tests + storybook.
 
 ### Testing
 Comes with tests out of the box using [svelte-testing-library](https://github.com/testing-library/svelte-testing-library) + [Jest](https://github.com/facebook/jest).
