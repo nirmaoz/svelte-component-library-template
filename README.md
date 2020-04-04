@@ -18,10 +18,10 @@ You can create a package that exports multiple components by adding them to the 
 
 ## This template includes:
 
-* Basic Component.svelte
+* Svelte Component
 * Testing using svelte-testing-library + Jest
 * Storybook
-* Rollup
+* Rollup, configured to build .js (umd), .min.js (iife), .mjs (es)
 
 ## Setting up
 
