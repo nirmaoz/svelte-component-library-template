@@ -9,8 +9,8 @@
     "prepublishOnly": "npm run build",
     "test": "jest test",
     "test:watch": "yarn test -- --watch",
-    "storybook": "start-storybook -p 6006",
-    "build-storybook": "del-cli docs && build-storybook -c .storybook -o docs"
+    "storybook": "NODE_OPTIONS=--openssl-legacy-provider start-storybook -p 6006",
+    "build-storybook": "del-cli docs && NODE_OPTIONS=--openssl-legacy-provider build-storybook -c .storybook -o docs"
   },
   "devDependencies": {
     "@babel/core": "^7.9.0",
